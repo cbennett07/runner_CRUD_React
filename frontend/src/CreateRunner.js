@@ -14,7 +14,6 @@ class CreateRunner extends Component {
         }
     }
 
-
     handleOnNameChange(e){
         this.setState({name:e.target.value});
     }
@@ -108,6 +107,7 @@ class CreateRunner extends Component {
                     <td>
                         <button value={this.state.id}
                                 onClick={() => this.handleClickAddRunner()}
+                                onChange={() => this.handleClickAddRunner()}
                         >Add Runner
                         </button>
                     </td>
